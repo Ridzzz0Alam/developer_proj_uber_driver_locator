@@ -1,14 +1,8 @@
-package com.rideshare.matchingservice.event;
+package com.rideshare.rideservice.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-/**
- * Event published to Kafka topic: ride.mathced
- * Consumed by Ride Service ro update ride with assigned driver
- */
-
 
 @Data
 @AllArgsConstructor
@@ -21,3 +15,5 @@ public class RideMatchedEvent {
     private double driverLongitude;
     private double distanceToPickupKm;
 }
+
+
